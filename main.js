@@ -1,17 +1,18 @@
+$(document).ready( function() {
 
 var choices = ['rock', 'paper', 'scissors']
 
 var user,
     computer,
     result
-var $selectors = document.getElementsByClassName('choice')
-var $computerChoice = document.getElementById('computer')
-var $userChoice = document.getElementById('user')
+var $selectors = $('.choice')
+var $computerChoice = $('#computer')[0]
+var $userChoice = $('#user')[0]
 
 var score = { win: 0, lose: 0, tie: 0 }
-var $wins = document.getElementById('wins')
-var $losses = document.getElementById('losses')
-var $ties = document.getElementById('ties')
+var $wins = $('#wins')[0]
+var $losses = $('#losses')[0]
+var $ties = $('#ties')[0]
 
 
 function userSelection (e) {
@@ -53,6 +54,9 @@ function render() {
 }
 
 
-for (var i = 0; i < $selectors.length; i++) {
-  $selectors[i].addEventListener('click', userSelection)
-} 
+$('.choice').click( function(e) {
+  userSelection(e)
+})  
+
+
+})
