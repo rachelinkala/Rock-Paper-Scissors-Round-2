@@ -4,8 +4,34 @@
   </head>
 
   <body>
-  
+    <div id="wrapper">
+      <h1 id ="title"> rock paper scissors </h1>
+    </div>
+    
+    <div class="container1">
+      <div class="img-row">
+        <img class="choice" id="rock" src="./rock.png" alt="rock" />
+      </div>
+      <div class="img-row">
+        <img class="choice" id="paper" src="./paper.png" alt="paper" />
+      </div>
+      <div class="img-row">
+        <img class="choice" id="scissors" src="./scissors.png" alt="scissors" />
+      </div>
 
+      <div class="container2">
+        <div class="face-off">
+          <img id="user" class="hide" alt="user choice"/>
+          <img id="computer" class="hide" alt="computer choice"/>
+        </div>
+
+      <div class="container3">
+        <div class="score-chart">
+          <h1 id = "wins">Wins: 0</h1>
+          <h1 id="losses">Losses: 0</h1>
+          <h1 id="ties">Ties: 0</h1>
+        </div>
+      </div>
 
     <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
     <script src="main.js"></script>

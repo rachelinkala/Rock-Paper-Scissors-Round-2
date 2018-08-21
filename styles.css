@@ -1,0 +1,48 @@
+
+.container1 {
+  position: relative;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.choice {
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.score-chart {
+  justify-content: space-between;
+}
+
+.selected {
+  height: 200px;
+  width: 200px;
+}
+
+.face-off {
+
+}
+
+#title {
+  font-size: 54px;
+  color:#39343B;
+  border-style: outset;
+  background-color: #fefeef;
+  width: 500px;
+  text-align: center;
+  font-family: Dont Click Me DEMO;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
